@@ -1,8 +1,11 @@
 {
+
     "now_address": "1",
-    "gps_now_address": "1",
-    "gps_province": "340000",
-    "gps_city": "340100",
+    "gps_now_address": "",
+    "now_province": "340000",
+    "gps_province": "",
+    "now_city": "340100",
+    "gps_city": "",
     "now_detail": "",
     "is_inschool": "6",
     "body_condition": "1",
@@ -10,5 +13,16 @@
     "now_status": "1",
     "now_status_detail": "",
     "has_fever": "0",
+    "last_touch_sars": "0",
+    "last_touch_sars_date": "",
+    "last_touch_sars_detail": "",
+    "last_touch_hubei": "0",
+    "last_touch_hubei_date": "",
+    "last_touch_hubei_detail": "",
+    "last_cross_hubei": "0",
+    "last_cross_hubei_date": "",
+    "last_cross_hubei_detail": "",
+    "return_dest": "1",
+    "return_dest_detail": "",
     "other_detail": ""
 }
