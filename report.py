@@ -74,7 +74,6 @@ class Report(object):
         print("login...")
         return session
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='USTC nCov auto report script.')
     parser.add_argument('data_path', help='path to your own data used for post method', type=str)
@@ -82,4 +81,14 @@ if __name__ == "__main__":
     parser.add_argument('password', help='your CAS password', type=str)
     args = parser.parse_args()
     autorepoter = Report(stuid=args.stuid, password=args.password, data_path=args.data_path)
-    autorepoter.report()
+    count = 3
+    while count != 0:
+        ret = autorepoter.report()
+        if ret != False:
+            break
+        print("Report Failed, retry...")
+        count = count - 1
+    if count != 0:
+        exit(0)
+    else:
+        exit(-1)
